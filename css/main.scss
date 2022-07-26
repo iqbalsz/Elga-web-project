@@ -8,6 +8,10 @@ a {
     font-size: 1.3rem;
   }
 
+.active {
+  font-weight: bold;
+}
+
 .web-logo {
   padding: 0 0 0 1.5em;
   font-weight: bold;
@@ -76,6 +80,7 @@ a {
           background: rgb(122, 117, 117);
         }
       }
+
     }
     .close {
       float: right;
