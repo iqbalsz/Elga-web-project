@@ -1,0 +1,185 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 1.5em 0 1.5em 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.web-logo {
+  padding: 0 0 0 1.5em;
+  font-weight: bold;
+}
+
+.web-logo span {
+  color: #99d8c2;
+}
+
+.hero {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.hero .text-content {
+  position: absolute;
+  top: 20%;
+  color: white;
+  margin: 0 200px;
+}
+
+.hero img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.top-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #333;
+  height: 100vh;
+  width: 50%;
+  z-index: 2;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.top-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+.top-nav ul a {
+  color: white;
+  padding: 0.75em 2em;
+  display: block;
+  width: 100%;
+}
+
+.top-nav ul a .web-logo {
+  width: 20%;
+}
+
+.top-nav ul a:hover {
+  background: #7a7575;
+}
+
+.top-nav .close {
+  float: right;
+  margin: 2em;
+  width: 2em;
+}
+
+.bot-nav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  margin: 0 0 0 0;
+  border-radius: 25px 25px 0 0;
+}
+
+.bot-nav .bot-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.bot-nav .fa {
+  color: white;
+  padding: 15px 1.3em;
+  font-size: 20px;
+}
+
+.bot-nav .fa:hover {
+  background: none;
+  opacity: 0.7;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header svg {
+  width: 2em;
+  margin-top: -0.6em;
+  cursor: pointer;
+  margin: 0 1.5em 0 0;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 0 5em 0;
+  }
+  .bot-nav .fa {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .top-nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  .top-nav svg.close {
+    display: none;
+  }
+  .top-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  .top-nav ul a {
+    color: black;
+    padding: 0.5em 1.5em;
+    font-size: 0.9rem;
+  }
+  .top-nav ul a:hover {
+    background: none;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=main.css.map */
