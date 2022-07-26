@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 1.5em 0 1.5em 0;
+  margin: 1em 0 0 0;
 }
 
 a {
@@ -19,8 +19,6 @@ a {
 
 .hero {
   position: relative;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 
 .hero .text-content {
@@ -37,6 +35,13 @@ a {
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+.hero .w3-button {
+  margin: 2.5em auto;
+  width: 70%;
+  display: block;
+  font-size: medium;
 }
 
 .top-nav {
@@ -143,7 +148,10 @@ header svg {
 
 @media only screen and (min-width: 680px) {
   body {
-    margin: 1.5em 0 5em 0;
+    margin: 1.5em 0 0 0;
+  }
+  .hero .w3-button {
+    display: unset;
   }
   .bot-nav .fa {
     font-size: 25px;

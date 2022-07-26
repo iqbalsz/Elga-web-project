@@ -1,6 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
-    margin: 1.5em 0 1.5em 0;
+    margin: 1em 0 0 0;
   }
 
 a {
@@ -20,7 +20,6 @@ a {
 
 .hero{
   position: relative;
-  transition: 0.3s ease;
   .text-content {
     position: absolute;
     top: 20%;
@@ -35,10 +34,15 @@ a {
     background-size: cover;
     height: 100vh;
   }
+
+  .w3-button {
+    margin: 2.5em auto;
+    width: 70%;
+    display: block;
+    font-size: medium;
+  }
+  
 }
-
-
-
 
 .top-nav {
     position: fixed;
@@ -126,9 +130,14 @@ justify-content: space-between;
     transform: translateX(0);
 }  
 
+
 @media only screen and (min-width: 680px) {
     body {
-      margin: 1.5em 0 5em 0;
+      margin: 1.5em 0 0 0;
+    }
+
+    .hero .w3-button {
+      display:unset;
     }
 
     .bot-nav {
