@@ -27,7 +27,7 @@ a {
   position: absolute;
   top: 20%;
   color: white;
-  margin: 0 200px;
+  margin: 0 50px;
 }
 
 .hero img {
@@ -162,6 +162,7 @@ header svg {
     width: auto;
     height: auto;
     background: none;
+    padding: 0 1.5em 0 1.5em;
   }
   .top-nav svg.close {
     display: none;
