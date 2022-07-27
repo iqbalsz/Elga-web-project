@@ -181,9 +181,12 @@ header svg {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   margin: 0;
-  font: 2rem;
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  font: 2em;
+}
+
+.hero-product a:hover {
+  font-style: italic;
+  font-size: 200%;
 }
 
 .open-nav {
