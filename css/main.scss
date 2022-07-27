@@ -131,6 +131,37 @@ justify-content: space-between;
   }
 }
 
+.hero-product {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .product-index {
+    margin: 0;
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+    p {
+      font: 100%;
+    }
+  }
+
+  a {
+    color: #99d8c2;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    margin: 0;
+    font: 2rem;
+    transition: 0.2s ease-in;
+  }
+}
+
 .open-nav {
     transform: translateX(0);
 }  

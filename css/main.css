@@ -145,6 +145,47 @@ header svg {
   margin: 0 1.5em 0 0;
 }
 
+.hero-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hero-product .product-index {
+  margin: 0;
+}
+
+.hero-product .product-index h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.hero-product .product-index p {
+  font: 100%;
+}
+
+.hero-product a {
+  color: #99d8c2;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin: 0;
+  font: 2rem;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
 .open-nav {
   -webkit-transform: translateX(0);
           transform: translateX(0);
