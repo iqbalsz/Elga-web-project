@@ -157,7 +157,8 @@ justify-content: space-between;
     font-weight: bold;
     transform: rotate(-90deg);
     margin: 0;
-    font: 2em;;
+    font: 2em;
+    transition: 0.2s ease-out;
     &:hover {
       font-style: italic;
       font-size: 200%;
