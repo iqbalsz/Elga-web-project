@@ -182,8 +182,8 @@ header svg {
           transform: rotate(-90deg);
   margin: 0;
   font: 2em;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .hero-product a:hover {
