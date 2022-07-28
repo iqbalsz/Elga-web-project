@@ -290,6 +290,93 @@ header svg {
   font-size: unset;
 }
 
+.careers-title {
+  margin: 0 0 0 1.5em;
+}
+
+.careers-title p {
+  margin: 0 0 1.5em 0;
+}
+
+.careers-title h1 {
+  margin: 1.5em 0 0 0;
+}
+
+.job-listing_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job-listing_container .sub-job-listing_container {
+  padding: 1em 0 1em 0;
+  margin: 10px 10px 0 10px;
+  -webkit-box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-width: 0 0 0 10px;
+}
+
+.job-listing_container .sub-job-listing_container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0.3em 0 0 0;
+}
+
+.job-listing_container .sub-job-listing_container ul li {
+  margin: 0 0 0 1.5em;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-department {
+  font-size: small;
+  color: #99d8c2;
+  font-weight: bold;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-department .job-listing-new {
+  font-size: xx-small;
+  font-weight: lighter;
+  color: white;
+  padding: 2px;
+  background-color: #99d8c2;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-department .job-listing-featured {
+  font-size: xx-small;
+  font-weight: lighter;
+  color: white;
+  padding: 3px;
+  background-color: #333;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-title {
+  font-size: large;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-desc {
+  font-size: smaller;
+  opacity: 0.5;
+}
+
+.job-listing_container .sub-job-listing_container.featured {
+  border-left: solid #99d8c2;
+}
+
 #menu:target > .menu-item:nth-child(6) {
   -webkit-transform: rotate(60deg) translateY(-120px) rotate(300deg);
           transform: rotate(60deg) translateY(-120px) rotate(300deg);
