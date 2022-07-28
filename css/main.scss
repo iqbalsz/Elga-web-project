@@ -336,12 +336,21 @@ justify-content: space-between;
       }
     }
 
+    .job-listing-desc {
+      flex-direction: column;
+      list-style-type: unset;
+      font-size: small;
+      margin: 10px 10px 10px 10px;
+      opacity: 0.8;
+      display: none;
+    }
+
     .job-listing-title {
       // font-weight: bold;
       font-size: large;
     }
 
-    .job-listing-desc {
+    .job-listing-info {
       font-size: smaller;
       opacity: 0.5;
     }
@@ -352,10 +361,16 @@ justify-content: space-between;
   // }
 
   .sub-job-listing_container.featured {
-    border-left:solid #99d8c2;
+    border-left: solid #99d8c2;
   }
 
 }
+
+.sub-job-listing_container:hover {
+    .job-listing-desc {
+      display: flex;
+    }
+  }
 
 
 

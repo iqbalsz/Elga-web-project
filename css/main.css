@@ -364,17 +364,35 @@ header svg {
   text-transform: uppercase;
 }
 
+.job-listing_container .sub-job-listing_container .job-listing-desc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: unset;
+  font-size: small;
+  margin: 10px 10px 10px 10px;
+  opacity: 0.8;
+  display: none;
+}
+
 .job-listing_container .sub-job-listing_container .job-listing-title {
   font-size: large;
 }
 
-.job-listing_container .sub-job-listing_container .job-listing-desc {
+.job-listing_container .sub-job-listing_container .job-listing-info {
   font-size: smaller;
   opacity: 0.5;
 }
 
 .job-listing_container .sub-job-listing_container.featured {
   border-left: solid #99d8c2;
+}
+
+.sub-job-listing_container:hover .job-listing-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #menu:target > .menu-item:nth-child(6) {
