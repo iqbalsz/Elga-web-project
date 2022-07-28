@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #99d8c2;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     margin: 1em 0 0 0;
@@ -17,7 +21,7 @@ a {
   font-weight: bold;
 
   span {
-    color: #99d8c2;
+    color: var(--accent-color);
   }
 }
 
@@ -153,7 +157,7 @@ justify-content: space-between;
   }
 
   a {
-    color: #99d8c2;
+    color: var(--accent-color);
     text-transform: uppercase;
     font-weight: bold;
     transform: rotate(180deg);
@@ -312,7 +316,7 @@ justify-content: space-between;
 
     .job-listing-department {
       font-size: small;
-      color: #99d8c2;
+      color: var(--accent-color);
       font-weight: bold;
 
       .job-listing-new{
@@ -320,7 +324,7 @@ justify-content: space-between;
         font-weight: lighter;
         color: white;
         padding: 2px;
-        background-color:#99d8c2;
+        background-color: var(--accent-color);
         border-radius: 25px;
         text-transform: uppercase;
       }
@@ -361,7 +365,7 @@ justify-content: space-between;
   // }
 
   .sub-job-listing_container.featured {
-    border-left: solid #99d8c2;
+    border-left: solid var(--accent-color);
   }
 
 }
