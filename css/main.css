@@ -38,7 +38,7 @@ a {
      object-fit: cover;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 93vh;
 }
 
 .hero .w3-button {
@@ -196,6 +196,148 @@ header svg {
           transform: translateX(0);
 }
 
+#menu {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  list-style: none;
+  font-size: 200%;
+  padding-left: 0px;
+}
+
+.menu-button {
+  opacity: 0;
+  z-index: -1;
+}
+
+.menu-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 80%;
+  margin: 0px;
+  border-radius: 50%;
+  background: #333333;
+  background-size: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+}
+
+#menu:not(:target) > a:first-of-type,
+#menu:target > a:last-of-type {
+  opacity: 1;
+  z-index: 1;
+}
+
+#menu:not(:target) > .icon-plus:before,
+#menu:target > .icon-menu:before {
+  opacity: 1;
+}
+
+.menu-item {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  line-height: 5px;
+  top: 80%;
+  border-radius: 50%;
+  background: #333333;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.menu-item .fa {
+  font-size: smaller;
+}
+
+.menu-item p {
+  text-align: center;
+  color: fff;
+  opacity: 0;
+  font-size: small;
+  margin-top: 1.5em;
+}
+
+.menu-item:hover {
+  opacity: 0.5;
+}
+
+.menu-item a {
+  color: #fff;
+  position: relative;
+  top: 25%;
+  left: 0;
+  text-decoration: none;
+  font-size: unset;
+}
+
+#menu:target > .menu-item:nth-child(6) {
+  -webkit-transform: rotate(60deg) translateY(-120px) rotate(300deg);
+          transform: rotate(60deg) translateY(-120px) rotate(300deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+#menu:target > .menu-item:nth-child(6) p {
+  opacity: 0.8;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#menu:target > .menu-item:nth-child(5) {
+  -webkit-transform: rotate(20deg) translateY(-125px) rotate(-20deg);
+          transform: rotate(20deg) translateY(-125px) rotate(-20deg);
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+#menu:target > .menu-item:nth-child(5) p {
+  opacity: 0.8;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#menu:target > .menu-item:nth-child(4) {
+  -webkit-transform: rotate(-20deg) translateY(-125px) rotate(20deg);
+          transform: rotate(-20deg) translateY(-125px) rotate(20deg);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+#menu:target > .menu-item:nth-child(4) p {
+  opacity: 0.8;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+#menu:target > .menu-item:nth-child(3) {
+  -webkit-transform: rotate(-60deg) translateY(-125px) rotate(60deg);
+          transform: rotate(-60deg) translateY(-125px) rotate(60deg);
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+#menu:target > .menu-item:nth-child(3) p {
+  opacity: 0.8;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
 @media only screen and (min-width: 680px) {
   body {
     margin: 1.5em 0 0 0;
@@ -205,6 +347,9 @@ header svg {
   }
   .bot-nav .fa {
     font-size: 25px;
+  }
+  #menu {
+    display: none;
   }
 }
 
